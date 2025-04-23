@@ -12,4 +12,5 @@ function DragButton () {
     const handleDragOver = (e) => {
         if (dragged) {
             const { clientX, clientY } = e;
+            setPosition({ x: clientX - 50, y: clientY - 50 });
 }
