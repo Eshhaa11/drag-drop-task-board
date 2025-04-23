@@ -5,4 +5,5 @@ function DragButton () {
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
     const handleDragStart = (e) => {
+        setDragged(true);
 }
