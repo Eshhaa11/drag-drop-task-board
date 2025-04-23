@@ -11,4 +11,5 @@ function DragButton () {
 
     const handleDragOver = (e) => {
         if (dragged) {
+            const { clientX, clientY } = e;
 }
