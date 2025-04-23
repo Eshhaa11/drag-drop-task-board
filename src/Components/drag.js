@@ -10,4 +10,5 @@ function DragButton () {
     };
 
     const handleDragOver = (e) => {
+        if (dragged) {
 }
