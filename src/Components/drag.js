@@ -37,8 +37,12 @@ const initialData = {
        });
     };
 
+
     return (
-        
+        <div className="board-cont">
+            
+        </div>
+
     )
   }
 
