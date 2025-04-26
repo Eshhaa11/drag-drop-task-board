@@ -41,7 +41,11 @@ const initialData = {
     return (
         <div className="board-cont">
             <h1>Drag & Drop Task Board 🧲</h1>
-            <DragDropContext onDragEnd={onDragEnd}
+            <DragDropContext onDragEnd={onDragEnd}>
+                <div className="columns">
+                    
+                </div>
+            </DragDropContext>
         </div>
 
     )
