@@ -32,6 +32,7 @@ const initialData = {
 
        setTask({
         ...tasks,
+        [source.droppableId]: sourceList
        })
 
 
