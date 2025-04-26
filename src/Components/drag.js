@@ -39,32 +39,43 @@ const initialData = {
 
 
     return (
-        <div className="board-cont">
-            <h1>Drag & Drop Task Board 🧲</h1>
-            <DragDropContext onDragEnd={onDragEnd}>
-                <div className="columns">
-                    {["todo", "done"].map((col) => (
-                        <Droppable key={col} droppableId="{col}">
-                           {(provided) => (
+        <div className="board">
+          <h1> Drag & Drop Task Board 🧲</h1>
+          <DragDropContext onDragEnd={onDragEnd}>
+            <div className="columns">
+              {["todo", "done"].map((col) => (
+                <Droppable key={col} droppableId={col}>
+                  {(provided) => (
+                    <div
+                      className="column"
+                      {...provided.droppableProps}
+                      ref={provided.innerRef}
+                    >
+                      <h2>{col === "todo" ? "📋 To Do" : "✅ Done"}</h2>
+                      {tasks[col].map((task, index) => (
+                        <Draggable key={task.id} draggableId={task.id} index={index}>
+                          {(provided) => (
                             <div
-                            className="task"
-                            ref={provided.innerRef}
-                            {...provided.draggableProps}
-                            {...provided.dragHandleProps}
+                              className="task"
+                              ref={provided.innerRef}
+                              {...provided.draggableProps}
+                              {...provided.dragHandleProps}
                             >
-                                {task.content}
+                              {task.content}
                             </div>
-                           )} 
-                        </Droppable>
-                ))}
-                {provided.placeholder}
-                </div>
-                
-            </DragDropContext>
+                          )}
+                        </Draggable>
+                      ))}
+                      {provided.placeholder}
+                    </div>
+                  )}
+                </Droppable>
+              ))}
+            </div>
+          </DragDropContext>
         </div>
-
-    )
-  }
+      );
+    }
 
 
 
