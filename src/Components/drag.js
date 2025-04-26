@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import "./drag.css"; 
 
 const initialData = {
@@ -31,7 +31,7 @@ const initialData = {
        destList.splice(destination.index, 0, movedItem)
 
        setTask({
-        ...tasks,
+        ...task,
         [source.droppableId]: sourceList,
         [destination.droppableId]: destList,
        });
@@ -52,7 +52,7 @@ const initialData = {
                       ref={provided.innerRef}
                     >
                       <h2>{col === "todo" ? "📋 To Do" : "✅ Done"}</h2>
-                      {tasks[col].map((task, index) => (
+                      {task[col].map((task, index) => (
                         <Draggable key={task.id} draggableId={task.id} index={index}>
                           {(provided) => (
                             <div
