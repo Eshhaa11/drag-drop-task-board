@@ -77,6 +77,6 @@ const initialData = {
       );
     }
 
-
+export default board;
 
     
