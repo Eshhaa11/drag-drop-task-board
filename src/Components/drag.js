@@ -30,6 +30,10 @@ const initialData = {
        const destList = [...task[destination.droppableId]];
        destList.splice(destination.index, 0, movedItem)
 
+       setTask({
+        ...tasks,
+       })
+
 
     }
   }
