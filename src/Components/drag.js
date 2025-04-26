@@ -54,13 +54,12 @@ const initialData = {
                             >
                                 {task.content}
                             </div>
-
                            )} 
                         </Droppable>
-
-                    )
-                    )}
+                ))}
+                {provided.placeholder}
                 </div>
+                
             </DragDropContext>
         </div>
 
