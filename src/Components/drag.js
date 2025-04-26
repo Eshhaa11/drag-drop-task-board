@@ -43,7 +43,13 @@ const initialData = {
             <h1>Drag & Drop Task Board 🧲</h1>
             <DragDropContext onDragEnd={onDragEnd}>
                 <div className="columns">
-                    
+                    {["todo", "done"].map((col) => (
+                        <Droppable key={col} droppableId="{col}">
+                            
+                        </Droppable>
+
+                    )
+                    )}
                 </div>
             </DragDropContext>
         </div>
