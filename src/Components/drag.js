@@ -17,6 +17,10 @@ const initialData = {
     ], 
 };
 
+  function board() {
+    
+  }
+
 
 
     
