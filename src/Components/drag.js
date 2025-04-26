@@ -24,6 +24,8 @@ const initialData = {
         const { source, destination } = result;
 
         if (!destination) return;
+
+       const sourceList = [...task[source.droppableId]];
     }
   }
 
