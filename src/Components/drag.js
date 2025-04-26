@@ -17,7 +17,7 @@ const initialData = {
     ], 
 };
 
-  function board() {
+  function Drag() {
     const [task, setTask] = useState(initialData);
 
     const onDragEnd = (result) => {
@@ -77,6 +77,6 @@ const initialData = {
       );
     }
 
-export default board;
+export default Drag;
 
     
