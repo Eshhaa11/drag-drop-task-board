@@ -10,11 +10,8 @@ const initialData = {
         { id: "4", content: "Go Shopping"},
         { id: "5", content: "Play basketball"},
         { id: "6", content: "Do Painting"},
-
-
-
     ]
-
+   
 }
 
 
