@@ -21,7 +21,7 @@ const initialData = {
     const [task, setTask] = useState(initialData);
 
     const onDragEnd = (result) => {
-        
+        const { source, destination } = result;
     }
   }
 
