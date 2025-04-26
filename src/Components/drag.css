@@ -36,4 +36,5 @@ h1{
     padding: 10px;
     border-radius: 10px;
     cursor: grab;
+    transition: background 0.3s;
 }
