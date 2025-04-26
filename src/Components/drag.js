@@ -45,7 +45,11 @@ const initialData = {
                 <div className="columns">
                     {["todo", "done"].map((col) => (
                         <Droppable key={col} droppableId="{col}">
-                            
+                           {(provided) => (
+                            <div
+                            className="task"
+                            ref={provided.innerRef}
+                           )} 
                         </Droppable>
 
                     )
