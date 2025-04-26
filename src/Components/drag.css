@@ -1,5 +1,5 @@
 body {
-    background-color: linear-gradient(135deg, #f3e5f5, #fce4ec);
+    background: linear-gradient(135deg, #f3e5f5, #fce4ec);
     font-family: "Segoe UI";
     font-weight: bold;
     margin: 0;
@@ -31,7 +31,7 @@ h1{
 .columns {
     justify-content: center;
     display: flex;
-    margin-top: 20px;
+    margin-top: 80px;
     gap: 30px;
 }
 
