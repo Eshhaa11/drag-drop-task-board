@@ -18,6 +18,10 @@ h1{
     padding: 20px;
 }
 
+.column h2{
+    color: ;
+}
+
 .columns {
     justify-content: center;
     display: flex;
