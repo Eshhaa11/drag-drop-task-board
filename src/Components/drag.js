@@ -18,7 +18,7 @@ const initialData = {
 };
 
   function board() {
-    
+    const [task, setTask] = useState(initialData)
   }
 
 
