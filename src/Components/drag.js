@@ -22,6 +22,8 @@ const initialData = {
 
     const onDragEnd = (result) => {
         const { source, destination } = result;
+
+        if (!destination) return;
     }
   }
 
