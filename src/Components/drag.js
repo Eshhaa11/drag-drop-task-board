@@ -49,6 +49,8 @@ const initialData = {
                             <div
                             className="task"
                             ref={provided.innerRef}
+                            {...provided.draggableProps}
+                            
                            )} 
                         </Droppable>
 
