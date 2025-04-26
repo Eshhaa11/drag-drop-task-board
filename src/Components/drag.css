@@ -31,5 +31,6 @@ h1{
 }
 
 .task {
+    margin: 10px 0;
     background-color: #f8bbd0;
 }
