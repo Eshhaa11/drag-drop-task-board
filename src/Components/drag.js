@@ -26,6 +26,9 @@ const initialData = {
         if (!destination) return;
 
        const sourceList = [...task[source.droppableId]];
+       const [movedItem] = sourceList.splice(source.index, 1);
+       
+
     }
   }
 
