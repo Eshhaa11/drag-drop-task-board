@@ -38,3 +38,7 @@ h1{
     cursor: grab;
     transition: background 0.3s;
 }
+
+.task:hover {
+    
+}
