@@ -32,11 +32,10 @@ const initialData = {
 
        setTask({
         ...tasks,
-        [source.droppableId]: sourceList
-       })
-
-
-    }
+        [source.droppableId]: sourceList,
+        [destination.droppableId]: destList,
+       });
+    };
   }
 
 
