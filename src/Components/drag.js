@@ -50,7 +50,11 @@ const initialData = {
                             className="task"
                             ref={provided.innerRef}
                             {...provided.draggableProps}
-                            
+                            {...provided.dragHandleProps}
+                            >
+                                {task.content}
+                            </div>
+
                            )} 
                         </Droppable>
 
