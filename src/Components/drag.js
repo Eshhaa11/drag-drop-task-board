@@ -6,7 +6,8 @@ const initialData = {
     todo: [
         { id: "1", content: "Make Coffee"},
         { id: "2", content: "Write a journal"},
-        { id: "1", content: "Finish Coding Project"}
+        { id: "3", content: "Finish Coding Project"},
+        { id: "4", content: "Go Shopping"},
 
     ]
 
