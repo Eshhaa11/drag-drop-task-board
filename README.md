@@ -1,3 +1,5 @@
+ ![App Screenshot](src/assets/Drag.jpg)
+
 # 🧲 Drag and Drop Task Board
 
 A minimal and interactive **drag-and-drop board** built with React. Organize your tasks between “To Do” and “Done” by simply dragging them around.
